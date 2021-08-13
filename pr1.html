@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ebecd4fb;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        .box {
+            width: 600px;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: #d3e5e7ad;
+            border-radius: 10px;
+            box-shadow: 2px 8px 5px #574b4a;
+        }
+
+
+        input {
+            font-size: 25px;
+            border-radius: 10px;
+            height: 70px;
+            width: 90%;
+            padding: 15px;
+            margin: 22px;
+            border: 1px solid #e4d33d;
+            background: #fcfcfcfb;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #e4d33d;
+        }
+
+        .buttbox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        button {
+            background-color: #e4d33d;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 1px solid rgb(192, 124, 181);
+            /* активный курсор */
+            cursor: pointer;
+            width: 30%;
+            /* opacity: 0.9; */
+            border-radius: 10px;
+
+        }
+
+        button:hover {
+            background-color: rgb(192, 124, 181);
+        }
+
+
+        ::placeholder,
+        button {
+            font-size: 25px;
+            font-family: monospace
+        }
+    </style>
+     <script src="/pr1.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <form name="form" onsubmit="return false;">
+            <div class="container">
+                <input type="text"   placeholder="Введите, пожалуйста, ФИО" id="input">
+            </div>
+            <div class="buttbox">
+                <button  onclick="check();" class="signupbtn">Cheсk!</button>
+            </div>
+                <input type="text"  name="name" placeholder="Фамилия">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="name" placeholder="Отчество">
+
+
+           
+        </form>
+
+    </div>
+   
+
+
+</body>
+
+</html>
