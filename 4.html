@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Генератор</title>
+
+    <style>
+        body {
+            background-color: #f2f9ca;
+        }
+
+        .container {
+            width: 600px;
+            height: 400px;
+            margin: 10% auto;
+            padding: 20px;
+            background-color: #9ba082;
+            border-radius: 10px;
+            box-shadow: 2px 8px 5px #1ea075;
+            font-size: 20px;
+            font-family: monospace;
+            color: #f2f9ca;
+
+        }
+
+        button {
+            background-color: #a01e49;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 1px solid #1ea075;
+            /* активный курсор */
+            cursor: pointer;
+            width: 30%;
+            /* opacity: 0.9; */
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
-        
-                <button  onclick="getRandomIntInclusive(min, max);" >Генерировать</button>
-        
-        </div>
+        <button onclick="generate();">Генерировать</button>
         <div>Сгенерировано:</div>
         <div class="list-group" id="randomNumb"></div>
         <div>Минимальное:</div>
@@ -27,4 +61,5 @@
     </div>
     <script src="/4.js"></script>
 </body>
+
 </html>

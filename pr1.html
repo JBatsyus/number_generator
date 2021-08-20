@@ -8,7 +8,8 @@
     <title>Document</title>
     <style>
         body {
-            background-color: #ebecd4fb;
+             #fcfcfcfb;
+            background-color: #fcfcfcfb;
         }
 
         * {
@@ -19,9 +20,9 @@
             width: 600px;
             margin: 10% auto;
             padding: 20px;
-            background-color: #d3e5e7ad;
+            background-color: #429779;
             border-radius: 10px;
-            box-shadow: 2px 8px 5px #574b4a;
+            box-shadow: 2px 8px 5px #971e3a;
         }
 
 
@@ -32,13 +33,13 @@
             width: 90%;
             padding: 15px;
             margin: 22px;
-            border: 1px solid #e4d33d;
+            border: 1px solid #7b1e97;
             background: #fcfcfcfb;
         }
 
         input:focus {
             outline: none;
-            box-shadow: 0 0 0 2px #e4d33d;
+            box-shadow: 0 0 0 2px #7b1e97;
         }
 
         .buttbox {
@@ -48,11 +49,11 @@
         }
 
         button {
-            background-color: #e4d33d;
+            background-color: #971e3a;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
-            border: 1px solid rgb(192, 124, 181);
+            border: 1px solid #971e3a;
             /* активный курсор */
             cursor: pointer;
             width: 30%;
@@ -62,7 +63,8 @@
         }
 
         button:hover {
-            background-color: rgb(192, 124, 181);
+            background-color: #a0262c;
+
         }
 
 
@@ -72,28 +74,24 @@
             font-family: monospace
         }
     </style>
-     <script src="/pr1.js"></script>
+    <script src="/pr1.js"></script>
 </head>
 
 <body>
     <div class="box">
         <form name="form" onsubmit="return false;">
             <div class="container">
-                <input type="text"   placeholder="Введите, пожалуйста ФИО" id="input" >
+                <input type="text" placeholder="Введите, пожалуйста ФИО" id="input">
             </div>
             <div class="buttbox">
-                <button  onclick="check();" class="signupbtn">Cheсk!</button>
+                <button onclick="check();" class="signupbtn">Cheсk!</button>
             </div>
-                <input type="text"  name="name" placeholder="Фамилия" >
-                <input type="text" name="name" placeholder="Имя">
-                <input type="text" name="name" placeholder="Отчество">
-
-
-           
+            <input type="text" name="name" placeholder="Фамилия">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="name" placeholder="Отчество">
         </form>
-
     </div>
-   
+
 
 
 </body>
