@@ -24,19 +24,19 @@ function generate() {
     // минимальное число
     let arr = randomNumb;
     let minNum = Math.min.apply(null, arr);
-    document.getElementById('minNum').innerHTML += minNum;
+    document.getElementById('minNum').innerHTML = minNum;
     // максимальное число
     let maxNum = Math.max.apply(null, arr);
-    document.getElementById('maxNum').innerHTML += maxNum;
+    document.getElementById('maxNum').innerHTML = maxNum;
     // среднее арифметическое
     let averageNum = arr.reduce((a, b) => a + b, 0) / arr.length;
-    document.getElementById('averageNum').innerHTML += averageNum;
+    document.getElementById('averageNum').innerHTML = averageNum;
     // сумма чисел
     let sumNum = arr.reduce((a, b) => a + b, 0);
-    document.getElementById('sumNum').innerHTML += sumNum;
+    document.getElementById('sumNum').innerHTML = sumNum;
     // произведение чисел
     let multik = arr.reduce((a, b) => a * b);
-    document.getElementById('multik').innerHTML += multik;
+    document.getElementById('multik').innerHTML = multik;
 }
 
 
